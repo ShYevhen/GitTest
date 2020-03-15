@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <lightning:quickActionAPI aura:id="quickActionAPI" />
+    <aura:attribute type="String" name="testText" default="Test"/>
+    <lightning:input value="{!v.testText}"/>
+    <lightning:button label="Click Me!" onclick="{!c.change}"/>
+</aura:component>
